@@ -14,10 +14,10 @@ namespace MultiplicationTable
             string userInput = "";
                         
             {
-            Console.WriteLine("Welcome to the multiplication table," +
-                "enter the number you wish to see the times table for. " +
-                "This will default to a 12x12 table if " +
-                "enter or any letter is pressed.");
+            Console.WriteLine($"Welcome to the multiplication table," +
+                "\nenter the number you wish to see the times table for. " +
+                "\nThis will default to a 12x12 table if " +
+                "\nenter or any letter is pressed.");
             
                 userInput = Console.ReadLine();
                 
