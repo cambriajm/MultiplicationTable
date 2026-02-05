@@ -1,7 +1,11 @@
-﻿using System.Data.Common;
-using System.Runtime.ExceptionServices;
-
+﻿
 namespace MultiplicationTable
+//Cambria Morgan
+//Spring 2026
+//RCET 2265
+//MultiplicationTable
+//https://github.com/cambriajm/MultiplicationTable.git 
+
 {
     internal class Program
     {
@@ -12,7 +16,9 @@ namespace MultiplicationTable
             
             {
             Console.WriteLine("Welcome to the multiplication table," +
-                "enter the number you wish to see the times table for.");
+                "enter the number you wish to see the times table for. " +
+                "This will default to a 12x12 table if " +
+                "enter or any letter is pressed.");
             
                 userInput = Console.ReadLine();
                 
@@ -21,6 +27,7 @@ namespace MultiplicationTable
                 {
                     try
                     {
+                        int result = int.Parse(userInput);
 
                     for (int array = 0; array < 1; array++)
                     {
@@ -35,7 +42,6 @@ namespace MultiplicationTable
                             Console.WriteLine();
                         }
                     }
-                        int result = int.Parse(userInput);
 
                     }
                     catch(Exception)
