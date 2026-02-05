@@ -12,8 +12,7 @@ namespace MultiplicationTable
         static void Main(string[] args)
         {
             string userInput = "";
-            
-            
+                        
             {
             Console.WriteLine("Welcome to the multiplication table," +
                 "enter the number you wish to see the times table for. " +
@@ -22,10 +21,10 @@ namespace MultiplicationTable
             
                 userInput = Console.ReadLine();
                 
-
-                if(userInput != null)
+                if(userInput != null) //if input is null, it defaults to the catch,
+                                      //sending it to the default of the 12x12
                 {
-                    try
+                    try// if integer is entered then this runs array with user input
                     {
                         int result = int.Parse(userInput);
 
@@ -42,9 +41,9 @@ namespace MultiplicationTable
                             Console.WriteLine();
                         }
                     }
-
                     }
-                    catch(Exception)
+                    catch(Exception) //here is where the null user input gets sent to show the 
+                                     //default 12x12 table
                     {
                         for (int array = 0; array < 1; array++)
                         {
